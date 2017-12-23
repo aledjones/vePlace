@@ -1,0 +1,133 @@
+/* IMPORTING FONTS */
+
+/* raleway-300 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'),
+       url('../fonts/raleway-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/raleway-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'),
+       url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/raleway-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-700 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'),
+       url('../fonts/raleway-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/raleway-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* STYLING */
+* {
+	box-sizing: border-box; 
+}
+
+body {
+	background-color: #507750;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+}
+
+.main{
+/*	animation: fadein 2s;*/
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.heading {
+/*	animation: 1s ease-out 0s 1 slideInHead;*/
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.text {
+/*	animation: 1s ease-out 0s 1 slideInText;*/
+	color: #fff;
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-align: justify;
+}
+
+/* Form Styling */
+input[type=text] {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+    background-color: #507750;
+	color: #fff;
+	border-style: none;
+	border-bottom: 2px solid #678e67;
+}
+select {
+    font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+    background-color: #507750;
+	color: #fff;
+	border-style: none;
+}
+input[type=submit] {
+    font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+    background-color: #678e67;
+	color: #fff;
+	border-style: none;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.legal {
+	color: #898787;
+	margin-bottom: 2vh;
+	font-size: 0.75rem;
+	position: absolute;
+	bottom: 0;
+}
+.legal a {
+	color: #898787;
+	text-decoration: none;
+}
+.legal a:hover {
+	transition-duration: .42s;
+	color: #c9c8c8;
+}
+
+
+/* Media queries, cause mobile phones 'n stuff
+@media only screen and (max-width: 700px) {
+	.heading {
+		font-size: 1em;
+	}
+	.text {
+		width: 95%;
+		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+	.legal {
+		display: none;
+	}
+}*/
+}*/
